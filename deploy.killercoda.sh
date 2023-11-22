@@ -2,6 +2,10 @@
   
 echo "Init creating ssh key to verify conectivity...."
 
+sudo apt install software-properties-common
+
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+
 sudo apt install ansible git
 
 ssh-keygen -q -b 2048 -t rsa -N "" -C "creating SSH" -f KEY-UBUNTU
