@@ -6,7 +6,7 @@ sudo apt install software-properties-common
 
 sudo add-apt-repository --yes --update ppa:ansible/ansible
 
-sudo apt install ansible git
+sudo apt install ansible git net-tools
 
 ssh-keygen -q -b 2048 -t rsa -N "" -C "creating SSH" -f KEY-UBUNTU
 
